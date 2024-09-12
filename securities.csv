@@ -1,7 +1,26 @@
-id,symbol,name
-1,AAPL,Apple Inc.
-2,GOOGL,Alphabet Inc.
-3,AMZN,Amazon.com Inc.
-4,MSFT,Microsoft Corporation
-5,TSLA,Tesla Inc.
-
+id,symbol,name,sector,industry,country,market_cap,price,dividend_yield
+1,AAPL,Apple Inc.,Technology,Consumer Electronics,United States,2500,150.00,0.6%
+2,GOOGL,Alphabet Inc.,Communication Services,"Internet Content & Information",United States,1800,2800.00,0.0%
+3,AMZN,Amazon.com Inc.,Consumer Cyclical,Internet Retail,United States,1600,3400.00,0.0%
+4,MSFT,Microsoft Corporation,Technology,Software-Infrastructure,United States,2300,300.00,0.8%
+5,TSLA,Tesla Inc.,Consumer Cyclical,Auto Manufacturers,United States,1000,700.00,0.0%
+6,FB,Meta Platforms Inc.,Communication Services,"Internet Content & Information",United States,1000,350.00,0.0%
+7,BRK.A,"Berkshire Hathaway Inc.",Financial Services,Insurance-Diversified,United States,600,420000.00,0.0%
+8,V,Visa Inc.,Financial Services,Credit Services,United States,500,230.00,0.6%
+9,JPM,"JPMorgan Chase & Co.",Financial Services,Banks-Diversified,United States,470,160.00,2.3%
+10,JNJ,Johnson & Johnson,Healthcare,"Drug Manufacturers-General",United States,450,170.00,2.5%
+11,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,United States,400,140.00,1.6%
+12,NVDA,NVIDIA Corporation,Technology,Semiconductors,United States,350,220.00,0.1%
+13,PG,"Procter & Gamble Co.",Consumer Defensive,"Household & Personal Products",United States,350,140.00,2.4%
+14,UNH,"UnitedHealth Group Inc.",Healthcare,Healthcare Plans,United States,400,400.00,1.3%
+15,HD,"Home Depot Inc.",Consumer Cyclical,Home Improvement Retail,United States,350,330.00,2.0%
+16,BAC,"Bank of America Corp.",Financial Services,Banks-Diversified,United States,340,40.00,1.9%
+17,MA,Mastercard Inc.,Financial Services,Credit Services,United States,360,350.00,0.5%
+18,DIS,"Walt Disney Co.",Communication Services,Entertainment,United States,320,180.00,0.0%
+19,VZ,"Verizon Communications Inc.",Communication Services,Telecom Services,United States,240,55.00,4.5%
+20,NFLX,Netflix Inc.,Communication Services,Entertainment,United States,250,600.00,0.0%
+21,PYPL,"PayPal Holdings Inc.",Financial Services,Credit Services,United States,310,250.00,0.0%
+22,KO,"Coca-Cola Co.",Consumer Defensive,"Beverages-Non-Alcoholic",United States,240,55.00,3.1%
+23,PFE,Pfizer Inc.,Healthcare,"Drug Manufacturers-General",United States,220,40.00,3.5%
+24,ORCL,Oracle Corporation,Technology,Software-Infrastructure,United States,200,85.00,1.5%
+25,T,"AT&T Inc.",Communication Services,Telecom Services,United States,210,28.00,7.5%
