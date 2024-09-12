@@ -10,7 +10,7 @@ market_data_df = pd.read_csv('market_data.csv')
 historical_prices_df = pd.read_csv('historical_prices.csv')
 
 # Endpoint para Security
-@app.get("/securities/")
+@app.get("/securities")
 def get_securities(
     symbol: Optional[str] = None,
     name: Optional[str] = None,
@@ -32,7 +32,7 @@ def get_securities(
     return {"total": total, "page": page, "size": size, "data": data}
 
 # Endpoint para MarketData
-@app.get("/market_data/")
+@app.get("/market_data")
 def get_market_data(
     security_id: Optional[int] = None,
     date: Optional[str] = None,
@@ -54,7 +54,7 @@ def get_market_data(
     return {"total": total, "page": page, "size": size, "data": data}
 
 # Endpoint para HistoricalPrices
-@app.get("/historical_prices/")
+@app.get("/historical_prices")
 def get_historical_prices(
     security_id: Optional[int] = None,
     start_date: Optional[str] = None,
