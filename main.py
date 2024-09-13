@@ -12,11 +12,11 @@ historical_prices_df = pd.read_csv('historical_prices.csv')
 # Endpoint para Security
 @app.get("/securities")
 def get_securities(
-    symbol: Optional[str] = None,
-    name: Optional[str] = None,
-    sort_by: Optional[str] = None,
-    page: int = 1,
-    size: int = 10
+    symbol: Optional[str] = Query(None, max_length=50),
+    name: Optional[str] = Query(None, max_length=100),
+    sort_by: Optional[str] = Query(None, max_length=50),
+    page: int = Query(1, gt=0),
+    size: int = Query(10, gt=0, le=100)
 ):
     df = securities_df.copy()
     if symbol:
@@ -34,11 +34,11 @@ def get_securities(
 # Endpoint para MarketData
 @app.get("/market_data")
 def get_market_data(
-    security_id: Optional[int] = None,
-    date: Optional[str] = None,
-    sort_by: Optional[str] = None,
-    page: int = 1,
-    size: int = 10
+    security_id: Optional[int] = Query(None, gt=0),
+    date: Optional[str] = Query(None),
+    sort_by: Optional[str] = Query(None, max_length=50),
+    page: int = Query(1, gt=0),
+    size: int = Query(10, gt=0, le=100)
 ):
     df = market_data_df.copy()
     if security_id:
@@ -56,12 +56,12 @@ def get_market_data(
 # Endpoint para HistoricalPrices
 @app.get("/historical_prices")
 def get_historical_prices(
-    security_id: Optional[int] = None,
-    start_date: Optional[str] = None,
-    end_date: Optional[str] = None,
-    sort_by: Optional[str] = None,
-    page: int = 1,
-    size: int = 10
+    security_id: Optional[int] = Query(None, gt=0),
+    start_date: Optional[str] = Query(None),
+    end_date: Optional[str] = Query(None),
+    sort_by: Optional[str] = Query(None, max_length=50),
+    page: int = Query(1, gt=0),
+    size: int = Query(10, gt=0, le=100)
 ):
     df = historical_prices_df.copy()
     if security_id:
